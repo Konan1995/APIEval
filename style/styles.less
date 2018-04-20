@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "swfont";
+    src: url('../images/Starjedi.ttf');
+    }
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  header {
+    width: 100vw;
+    height: 20vh;
+    h1 {
+      display: flex;
+      justify-content: center;
+      color: yellow;
+      font-family: "swfont",arial, sans-serif;
+      font-size: 40px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: yellow;
+    }
+    .buttons {
+      font-family: "swfont",arial, sans-serif;
+      background-color: yellow;
+      border: none;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  main {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    h2 {
+      color: yellow;
+      font-family: "swfont",arial, sans-serif;
+      text-align: center;
+      text-shadow: 2px 2px black;
+      font-size: 35px;
+    }
+    p {
+      color: yellow;
+      font-family: "swfont",arial, sans-serif;
+      text-align: center;
+      text-shadow: 2px 2px black;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    .buttons {
+      font-size: 12px!important;
+    }
+    h1 {
+      font-size: 22px!important;
+    }
+  }
+  main {
+    p {
+      font-size: 14px!important;
+    }
+    h2 {
+      font-size: 20px!important;
+    }
+  }
+}
